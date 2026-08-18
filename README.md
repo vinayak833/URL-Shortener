@@ -1,4 +1,4 @@
-# SnipLink 🚀
+# SnipLink
 
 SnipLink is a modern, fast, and secure URL Shortener application. It features a polished dashboard for link management, instant QR code generation, JWT-based user authentication, and detailed click analytics visualized with elegant charts.
 
@@ -6,19 +6,19 @@ It runs as a unified full-stack application leveraging Node.js/Express and a Rea
 
 ---
 
-## ✨ Features
+## Features
 
-- **⚡ Sleek URL Shortening**: Instantly generate short, easy-to-share links.
-- **📊 Interactive Analytics**: Monitor link performance, total clicks, referrer breakdown, and view click progression over time via interactive Recharts.
-- **📸 QR Code Generator**: Automatically generate and download high-resolution QR codes for any shortened link.
-- **🔒 Secure Authentication**: Complete user registration and login flows secured with JSON Web Tokens (JWT) and bcrypt password hashing.
-- **💾 Zero-Config Database Fallback**: Automatically connects to **MongoDB** if `MONGODB_URI` is provided, otherwise falls back to a **local JSON database** (`.data_urls.json` / `.data_users.json`) so the app runs out-of-the-box.
-- **🛡️ Speed & Safety**: Equipped with a custom rate-limiter for shortening API endpoints, route validation middleware, and global error handling.
-- **📦 Production-Ready Bundler**: Integrates client assets via Vite and compiles the Express backend using `esbuild` for high-performance production hosting.
+- **Sleek URL Shortening**: Instantly generate short, easy-to-share links.
+- **Interactive Analytics**: Monitor link performance, total clicks, referrer breakdown, and view click progression over time via interactive Recharts.
+- **QR Code Generator**: Automatically generate and download high-resolution QR codes for any shortened link.
+- **Secure Authentication**: Complete user registration and login flows secured with JSON Web Tokens (JWT) and bcrypt password hashing.
+- **Zero-Config Database Fallback**: Automatically connects to **MongoDB** if `MONGODB_URI` is provided, otherwise falls back to a **local JSON database** (`.data_urls.json` / `.data_users.json`) so the app runs out-of-the-box.
+- **Speed & Safety**: Equipped with a custom rate-limiter for shortening API endpoints, route validation middleware, and global error handling.
+- **Production-Ready Bundler**: Integrates client assets via Vite and compiles the Express backend using `esbuild` for high-performance production hosting.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: React 19 (SPA)
@@ -37,7 +37,7 @@ It runs as a unified full-stack application leveraging Node.js/Express and a Rea
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ├── api/                   # Serverless endpoint handler (e.g. for serverless hosts)
@@ -64,7 +64,7 @@ It runs as a unified full-stack application leveraging Node.js/Express and a Rea
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 To customize the application behavior, create a `.env` file in the root directory:
 
@@ -81,7 +81,7 @@ APP_URL=http://localhost:3000
 
 ---
 
-## 💻 Setup & Installation
+## Setup & Installation
 
 ### 1. Prerequisites
 Ensure you have [Node.js](https://nodejs.org) (v18 or higher) installed on your machine.
@@ -112,7 +112,7 @@ npm start
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 * `POST /api/auth/register` - Create a new user account.
@@ -129,6 +129,6 @@ npm start
 
 ---
 
-## 👤 Author
+## Author
 
 - **Vinayak** ([@vinayak833](https://github.com/vinayak833))
