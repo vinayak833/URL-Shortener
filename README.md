@@ -1,12 +1,5 @@
 # SnipLink 🚀
 
-[![React](https://img.shields.io/badge/React-19.0-blue?style=flat-square&logo=react)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=flat-square&logo=vite)](https://vite.dev)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-4.21-000000?style=flat-square&logo=express)](https://expressjs.com)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Optional-47A248?style=flat-square&logo=mongodb)](https://www.mongodb.com)
-
 SnipLink is a modern, fast, and secure URL Shortener application. It features a polished dashboard for link management, instant QR code generation, JWT-based user authentication, and detailed click analytics visualized with elegant charts.
 
 It runs as a unified full-stack application leveraging Node.js/Express and a React SPA. It features a **dual-mode database backend** that automatically connects to MongoDB but seamlessly falls back to a persistent local JSON database if MongoDB is not configured or offline. This means you can run the entire application locally with zero database setup!
@@ -133,3 +126,9 @@ npm start
 ### Redirection & Analytics
 * `GET /:code` - Redirects visitors to the original URL and tracks click metadata.
 * `GET /api/stats/:code` - Retrieve click analytics (historical timeline, referrers, total clicks) for a short code.
+
+---
+
+## 👤 Author
+
+- **Vinayak** ([@vinayak833](https://github.com/vinayak833))
