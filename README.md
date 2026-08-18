@@ -82,8 +82,3 @@ The repository includes standard `vercel.json` configurations to deploy both fro
    vercel --prod
    ```
 
-### Deploying to Render
-A `render.yaml` blueprint is included for deploying to [Render](https://render.com) using standard infrastructure-as-code:
-1. Push your repository to GitHub.
-2. In Render, select **Blueprints** -> **New Blueprint Instance**.
-3. Select your repository to deploy the web service automatically.
