@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: url-shortener-analytics
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+        placeholder: "Your MongoDB Atlas connection string (e.g. mongodb+srv://...)"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: APP_URL
+        sync: false
+        placeholder: "Your deployed application URL (e.g. https://url-shortener.onrender.com)"

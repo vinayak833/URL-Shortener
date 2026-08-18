@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Grotesk", ui-monospace, monospace;
+}
+
+:root {
+  --bg: #F8F7F4;
+  --ink: #1D1818;
+  --accent: #E63946;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Brutalist utility classes matching user design variation */
+.label-brutalist {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.card-brutalist {
+  border: 1.5px solid var(--ink);
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 6px 6px 0 var(--ink);
+  color: var(--ink);
+}
+
+.btn-brutalist {
+  border: 1.5px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+
+.btn-brutalist:hover:not(:disabled) {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: translate(-1px, -1px);
+}
+
+.btn-accent {
+  border: 1.5px solid var(--ink);
+  background: var(--accent);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+
+.btn-accent:hover:not(:disabled) {
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: translate(-1px, -1px);
+}
+
+.input-brutalist {
+  border: 1.5px solid var(--ink);
+  padding: 0.8rem 1rem;
+  width: 100%;
+  background: #fff;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.input-brutalist:focus {
+  border-color: var(--accent);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7F4;
+  border-left: 1.5px solid #1D1818;
+}
+::-webkit-scrollbar-thumb {
+  background: #1D1818;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E63946;
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/login", "destination": "/index.html" },
+    { "source": "/register", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/index.html" },
+    { "source": "/stats/(.*)", "destination": "/index.html" },
+    { "source": "/((?!assets|favicon.ico|vite.svg|.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico)).*)", "destination": "/api/index.js" }
+  ]
+}

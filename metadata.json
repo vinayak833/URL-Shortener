@@ -1,0 +1,6 @@
+{
+  "name": "URL Shortener",
+  "description": "A 6-digit URL shortener built with MERN stack architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
