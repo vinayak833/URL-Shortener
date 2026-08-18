@@ -14,7 +14,6 @@ It runs as a unified full-stack Node.js / Express and React SPA, and features a 
 - **User Authentication**: Secure signup and login with JWT and bcrypt password hashing.
 - **Out-of-the-box Hybrid Database**: Connects to **MongoDB** if `MONGODB_URI` is provided, otherwise falls back to a **local JSON database** (`.data_urls.json` / `.data_users.json`) so it runs without database setup.
 - **Production Build Ready**: Integrates Vite client builds and Express server compilation via `esbuild`.
-- **Vercel Serverless Support**: Configuration file `vercel.json` and serverless handler `api/index.js` included for instant serverless deployments.
 
 ---
 
@@ -69,16 +68,4 @@ npm start
 ```
 *This bundles the client into `dist/` and runs the backend using the compiled CJS server.*
 
----
-
-## ☁️ Deployment
-
-### Deploying to Vercel
-The repository includes standard `vercel.json` configurations to deploy both frontend assets and Express API endpoints seamlessly:
-1. Make sure you have the [Vercel CLI](https://vercel.com/cli) installed or connect the repository to Vercel's Git Integration.
-2. Ensure you add `MONGODB_URI` and `JWT_SECRET` inside your Vercel Project environment variables.
-3. Deploy directly using the CLI:
-   ```bash
-   vercel --prod
-   ```
 
